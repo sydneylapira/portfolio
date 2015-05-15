@@ -1,0 +1,196 @@
+/* color scheme:
+light grey: #dcdcdc, #ebebeb
+gray: #aeaeae
+charcoal: #656565
+darker grey: #4a4a4a
+red: #a22424
+dark red: #771111 */
+
+html, body {
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    background-color: #ebebeb;
+    font-size: 32px;
+}
+
+/* Index */
+
+#index { 
+  background: url(../_img/paper.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    text-align: center;
+
+    @keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    16% {
+       opacity: 1;
+    }
+    84% {
+       opacity: 1;
+    }
+    100% {
+       opacity: 0;
+    }
+}
+    
+    
+}
+
+header#index {
+    padding-top: 13%;
+}
+
+#index container {
+    height: 50%;
+}
+
+section {
+    background-color: transparent;
+}
+
+/*
+#nav2 {
+    list-style-type: none;
+    display: inline;
+}
+
+#nav2 li {
+    display: inline;
+    text-align: center;
+    padding-right: 10px;
+}
+*/
+
+
+
+/* Music Page */
+
+div.music {
+    text-align: center;
+}
+
+#musicPlayer {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+/* Media */
+
+#gallery {
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+#gallery img {
+    padding: 6px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+
+/* About */
+
+#bio {
+    width: 100%;
+    font-size: 1.2em;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    color: #aeaeae;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.generalbio {
+    font-size: 1.2em;
+    color: #656565;
+}
+
+
+h3.about {
+    font-size: 5em;
+    position: relative;
+    top: -130px;
+    left: 40px;
+}
+
+.q {
+    color: #656565;
+    font-size: 1.3em;
+}
+
+
+#text {
+    float: left;
+    display: inline-block;
+    width: 40%;
+}
+
+#biopic {
+    float: right;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+
+/* Link styles */
+
+a, a:visited, #text a:visited {
+    color: #656565;
+    text-decoration: none;
+}
+
+a:hover, #text a:hover {
+    color: #a22424;
+}
+
+
+/* footer */
+
+footer {
+    height: 50px;
+    background-color: #4a4a4a;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+    display: inline-block;
+}
+
+.copyright {
+    padding-left: 15px;
+    text-align: right;
+    float: right;
+    padding-top: 15px;
+    padding-right: 13px;
+}
+
+
+/* social media links */
+
+ul.share-buttons{
+  list-style: none;
+    padding-bottom: 1px;
+}
+
+ul.share-buttons li{
+    display: inline;
+    padding-left: 2px;
+}
+
+#icons {
+    float: left;
+}
+
