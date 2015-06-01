@@ -1,3 +1,96 @@
+/* Writing Pages Styles */
+
+/* Colors
+
+main: #336699;
+grey blue: #7192B2;
+slightly darker blue: #285078;
+dark grey blue: #415366;
+
+light grey: #dcdcdc, #ebebeb
+gray: #aeaeae
+charcoal: #656565
+darker grey: #4a4a4a
+white blue: #C0F0FF
+*/
+
+
+html,
+body {
+    height: 100%;
+    margin: 0
+}
+
+#content {
+    width: 100%;
+    height: 100%
+}
+
+#left {
+    width: 35%;
+    height: 100%;
+    float: left;
+    color: #dcdcdc;
+    background-color: #656565;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+#right {
+    height: 100%;
+    padding-left: 5px;
+}
+
+#right iframe {
+    width: 60%;
+    height: 90%;
+    padding-left: 10px;
+}
+
+body img {
+    padding-top: 6%;
+}
+
+body h1 {
+    font-size: 2em;
+}
+
+
+.writing ul {
+    position: fixed;
+    left: 12px;
+}
+
+
+div .writing ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+div .writing ul li.current {
+    border-bottom: 1px solid #d9f0ff;
+    padding-bottom: -2px;
+}
+
+div .writing ul li a {
+    color: #D9F0FF;
+}
+
+
+/* footer */
+
+.copyright {
+    text-align: left;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 4px;
+    position: fixed;
+    bottom: 0px;
+}
+ /* BLUE NAV */
+
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
@@ -109,18 +202,18 @@ section button {
 	background: #777;
 }
 
-section {
+#content #left section {
 	text-align: center;
 	font-size: 1.5em;
 }
 
-section p {
+#content #left section p {
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px 0;
 }
 
-section button {
+#content #left section button {
 	border: none;
 	outline: none;
 	background: transparent;
@@ -128,7 +221,7 @@ section button {
     font-size: 2.5em;
 
 	position: fixed;
-	right: 30px;
+	left: 30px;
 	top: 0px;
 	z-index: 100;
 }

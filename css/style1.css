@@ -3,8 +3,14 @@ light grey: #dcdcdc, #ebebeb
 gray: #aeaeae
 charcoal: #656565
 darker grey: #4a4a4a
-red: #a22424
-dark red: #771111 */
+sky blue: #66C3E0
+white blue: #C0F0FF
+
+main: #336699;
+grey blue: #7192B2;
+slightly darker blue: #285078;
+dark grey blue: #415366;
+*/
 
 
 /* Overlay style */
@@ -14,7 +20,8 @@ dark red: #771111 */
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(119,17,17,0.8);
+/*	background: rgba(102,195,224, 0.9);*/
+    background: rgba(51,102,153, 0.8);
 }
 
 /* Overlay closing cross */

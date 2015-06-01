@@ -3,8 +3,16 @@ light grey: #dcdcdc, #ebebeb
 gray: #aeaeae
 charcoal: #656565
 darker grey: #4a4a4a
-red: #a22424
-dark red: #771111 */
+sky blue: #66C3E0
+white blue: #C0F0FF
+red:  #a22424;
+
+
+main: #336699;
+grey blue: #7192B2;
+slightly darker blue: #285078;
+dark grey blue: #415366;
+*/
 
 html, body {
     font-family: 'Lato', sans-serif;
@@ -13,6 +21,11 @@ html, body {
 html {
     background-color: #ebebeb;
     font-size: 32px;
+}
+
+h1 {
+    padding-top: 15px;
+    color: #313834;
 }
 
 /* Index */
@@ -24,27 +37,10 @@ html {
   -o-background-size: cover;
   background-size: cover;
     text-align: center;
-
-    @keyframes fadeInOut {
-    0% {
-        opacity: 0;
-    }
-    16% {
-       opacity: 1;
-    }
-    84% {
-       opacity: 1;
-    }
-    100% {
-       opacity: 0;
-    }
-}
-
-
 }
 
 header#index {
-    padding-top: 17%;
+    padding-top: 11%;
 }
 
 #index container {
@@ -53,34 +49,30 @@ header#index {
 
 section {
     background-color: transparent;
+    padding-bottom: 13px;
+    color: #313834;
 }
 
-/*
-#nav2 {
-    list-style-type: none;
-    display: inline;
+/* Nav Styles */
+
+ul.submenu {
+    padding: 10px;
 }
 
-#nav2 li {
-    display: inline;
-    text-align: center;
-    padding-right: 10px;
-}
-*/
 
-
-
-/* Music Page */
-
-div.music {
-    text-align: center;
+li.submenu {
+    font-size: .5em;
+    color: white;
 }
 
-#musicPlayer {
-    width: 75%;
-    margin: auto;
-    padding-bottom: 100px;
+
+/* Writing */
+.container header {
+    padding-top: 10%;
 }
+
+
+
 
 /* Media */
 
@@ -99,51 +91,37 @@ div.music {
 }
 
 
-/* About */
+/* About and Contact */
 
-#bio {
-    width: 100%;
-    font-size: 1.2em;
-    padding-left: 60px;
-    padding-bottom: 50px;
-    color: #aeaeae;
-    line-height: 20px;
-    display: inline-block;
+form {
+    text-align: center;
+    color: #285078;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
-.generalbio {
-    font-size: 1.2em;
-    color: #656565;
+form p {
+    text-align: right;
+    padding-right: 35%;
 }
 
-
-h3.about {
-    font-size: 5em;
+form p input.message {
+    width: 300px;
+    height: 100px;
     position: relative;
-    top: -130px;
-    left: 40px;
 }
 
-.q {
-    color: #656565;
-    font-size: 1.3em;
+section#about {
+    background-color: transparent;
+    padding-bottom: 3px;
+    color: #313834;
 }
 
-
-#text {
-    float: left;
-    display: inline-block;
-    width: 40%;
+input.submit {
+    text-transform: uppercase;
+    background-color: #336699;
+    box-shadow: none;
 }
-
-#biopic {
-    float: right;
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 10px;
-}
-
-
 /* Link styles */
 
 a, a:visited, #text a:visited {
@@ -152,7 +130,7 @@ a, a:visited, #text a:visited {
 }
 
 a:hover, #text a:hover {
-    color: #a22424;
+    color: #656565;
 }
 
 
@@ -175,6 +153,7 @@ footer {
     float: right;
     padding-top: 15px;
     padding-right: 13px;
+    color: #dcdcdc;
 }
 
 
@@ -194,4 +173,55 @@ ul.share-buttons li{
     float: left;
 }
 
+/* Home navbar */
 
+html {
+    height: 100%;
+    background-image: url(../img/background2.jpg);
+    background-size: 100%;
+    filter: blur(100px);
+}
+
+.nav, .writingnav {
+    padding-top: 19px;
+}
+
+.nav ul, .writingnav ul {
+  text-align:center;
+    position: relative;
+    left: -20px;
+    top: -50px;
+}
+.nav ul li, .writingnav ul li {
+  display: inline-block;
+}
+
+.nav ul li a {
+  font-family:"Lato";
+  color: rgba(0, 35, 34, 0.6);
+  font-size: 15px;
+  text-transform:uppercase;
+  text-decoration:none;
+}
+
+.writingnav ul li a {
+  font-family:"Lato";
+  color: rgba(62,70,65, 0.9);
+  text-decoration:none;
+}
+
+
+.nav ul li a, .writingnav ul li a {
+  background:rgba(174, 174, 174, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), inset  0 0 1px rgba(225, 255, 255, 0.4);
+  width:150px;
+  height:150px;
+  line-height:145px;
+  border-radius: 50%;
+  display:block;
+}
+
+.nav ul li a:hover, .writingnav ul li a:hover {
+  transition-duration: 300ms;
+  background: rgba(51,102,153, 0.4);
+}
