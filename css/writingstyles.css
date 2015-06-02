@@ -1,18 +1,19 @@
 /* Writing Pages Styles */
 
-/* Colors
-
-main: #336699;
-grey blue: #7192B2;
-slightly darker blue: #285078;
-dark grey blue: #415366;
-
+/* color scheme:
 light grey: #dcdcdc, #ebebeb
 gray: #aeaeae
 charcoal: #656565
 darker grey: #4a4a4a
+sky blue: #66C3E0
 white blue: #C0F0FF
+red:  #a22424;
+
+darker: #75B2A7
+accent: #80C4B7
+grey: #E5E5E5
 */
+
 
 
 html,
@@ -34,7 +35,7 @@ body {
     background-color: #656565;
     margin: auto;
     text-align: center;
-    padding: 30px;
+    padding-top: 30px;
 }
 
 #right {
@@ -45,7 +46,7 @@ body {
 #right iframe {
     width: 60%;
     height: 90%;
-    padding-left: 10px;
+    margin: auto;
 }
 
 body img {
@@ -59,7 +60,8 @@ body h1 {
 
 .writing ul {
     position: fixed;
-    left: 12px;
+    text-align: center;
+    width: 30%;
 }
 
 
@@ -69,12 +71,12 @@ div .writing ul li {
 }
 
 div .writing ul li.current {
-    border-bottom: 1px solid #d9f0ff;
+    border-bottom: 1px solid #75B2A7;
     padding-bottom: -2px;
 }
 
 div .writing ul li a {
-    color: #D9F0FF;
+    color: #80C4B7;
 }
 
 
@@ -89,6 +91,22 @@ div .writing ul li a {
     position: fixed;
     bottom: 0px;
 }
+
+div .writing ul li.backtowork {
+    list-style-type: none;
+    line-height: 30px;
+    color: black;
+}
+
+#content #right img {
+    height: 90%;
+    max-width: 65%;
+    padding-left: 70px;
+}
+
+
+
+
  /* BLUE NAV */
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -217,7 +235,7 @@ section button {
 	border: none;
 	outline: none;
 	background: transparent;
-    color: #7192B2;
+    color: #80C4B7;
     font-size: 2.5em;
 
 	position: fixed;

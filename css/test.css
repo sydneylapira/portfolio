@@ -1,0 +1,169 @@
+/* Color Scheme
+darker: #75B2A7
+accent: #80C4B7
+grey: #E5E5E5
+
+*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Lato';
+}
+
+h1 {
+    font-size: 225%;
+    color: #fff;
+}
+
+.title h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 90%;
+}
+
+p {
+    font-size: 140%;
+    line-height: 150%;
+    color: #fff;
+}
+
+a, a:hover {
+    color: #80C4B7;
+    text-decoration: none;
+}
+
+#start {
+    background-color: #80C4B7;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .75em;
+    color: white;
+}
+
+.send {
+    color: white;
+    background-color: #80C4B7;
+    border: none;
+    padding: 20px;
+    Width: 200px;
+}
+
+
+#slide3 .title a, #slide3 .title a:hover {
+    color: #75B2A7;
+}
+
+.slide {
+    position: relative;
+    padding: 25vh 10%;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .2);
+    transform-style: inherit;
+}
+
+img:last-of-type {
+    transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.title {
+    width: 45%;
+    padding: 5%;
+    border-radius: 5px;
+    background: rgba(101, 101, 101, 0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+
+.slide:nth-child(2n) .title {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.slide,
+.slide:before {
+    background: 50% 50% / cover;
+}
+
+.header {
+    text-align: center;
+    font-size: 175%;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    font-size: 175%;
+    color: #fff;
+    position: relative;
+    padding: 5vh 10%;
+    min-height: 80vh;
+    width: 100vw;
+    box-sizing: border-box;
+    transform-style: inherit;
+
+}
+
+#title {
+    background-image: url(../img/background2.jpg);
+    background-attachment: fixed;
+}
+
+#slide1:before {
+    background-color: #80C4B7;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
+
+#slide2 {
+  background-image: url(../img/background35.jpg);
+  background-attachment: fixed;
+}
+
+#slide2 .title {
+    width: 60%;
+}
+
+#slide3:before {
+    background-color: #E5E5E5;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
+
+#slide4 {
+    background: #222;
+}
+
+/*Parallax created via tutorials from Codrops and Codepen */

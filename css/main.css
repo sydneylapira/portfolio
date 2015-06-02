@@ -7,11 +7,9 @@ sky blue: #66C3E0
 white blue: #C0F0FF
 red:  #a22424;
 
-
-main: #336699;
-grey blue: #7192B2;
-slightly darker blue: #285078;
-dark grey blue: #415366;
+darker: #75B2A7
+accent: #80C4B7
+grey: #E5E5E5
 */
 
 html, body {
@@ -25,112 +23,41 @@ html {
 
 h1 {
     padding-top: 15px;
-    color: #313834;
+    color: #fff;
 }
 
-/* Index */
-
-#index {
-  background: url(../_img/paper.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    text-align: center;
-}
-
-header#index {
-    padding-top: 11%;
-}
-
-#index container {
-    height: 50%;
-}
 
 section {
     background-color: transparent;
     padding-bottom: 13px;
-    color: #313834;
+    color: #fff;
 }
 
-/* Nav Styles */
+/* Work */
 
-ul.submenu {
-    padding: 10px;
+div.headerWork {
+    text-align: center;
+    padding-top: 8%;
 }
 
-
-li.submenu {
-    font-size: .5em;
-    color: white;
+.container .headerWork h1 {
+    font-size: 4em;
 }
-
 
 /* Writing */
 .container header {
     padding-top: 10%;
 }
 
-
-
-
-/* Media */
-
-#gallery {
-    width: 95%;
-    text-align: center;
-    margin: auto;
-    padding-bottom: 100px;
-}
-
-#gallery img {
-    padding: 6px;
-    height: 250px;
-    width: 250px;
-    overflow: hidden;
-}
-
-
-/* About and Contact */
-
-form {
-    text-align: center;
-    color: #285078;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-form p {
-    text-align: right;
-    padding-right: 35%;
-}
-
-form p input.message {
-    width: 300px;
-    height: 100px;
-    position: relative;
-}
-
-section#about {
-    background-color: transparent;
-    padding-bottom: 3px;
-    color: #313834;
-}
-
-input.submit {
-    text-transform: uppercase;
-    background-color: #336699;
-    box-shadow: none;
-}
 /* Link styles */
 
 a, a:visited, #text a:visited {
-    color: #656565;
+    color: #80C4B7;
     text-decoration: none;
 }
 
 a:hover, #text a:hover {
-    color: #656565;
+    color: #fff;
 }
 
 
@@ -145,6 +72,7 @@ footer {
     right:0px;
     margin-bottom:0px;
     display: inline-block;
+    color: #fff;
 }
 
 .copyright {
@@ -153,7 +81,7 @@ footer {
     float: right;
     padding-top: 15px;
     padding-right: 13px;
-    color: #dcdcdc;
+    color: #fff;
 }
 
 
@@ -187,9 +115,9 @@ html {
 }
 
 .nav ul, .writingnav ul {
-  text-align:center;
+    text-align:center;
     position: relative;
-    left: -20px;
+    right: 20px;
     top: -50px;
 }
 .nav ul li, .writingnav ul li {
@@ -198,15 +126,15 @@ html {
 
 .nav ul li a {
   font-family:"Lato";
-  color: rgba(0, 35, 34, 0.6);
-  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
   text-transform:uppercase;
   text-decoration:none;
 }
 
 .writingnav ul li a {
   font-family:"Lato";
-  color: rgba(62,70,65, 0.9);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration:none;
 }
 
@@ -223,5 +151,5 @@ html {
 
 .nav ul li a:hover, .writingnav ul li a:hover {
   transition-duration: 300ms;
-  background: rgba(51,102,153, 0.4);
+  background: rgba(128,196,183, 0.7);
 }
